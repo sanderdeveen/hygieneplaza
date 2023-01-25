@@ -28,8 +28,8 @@
 
   .footer__content-top {
     padding-bottom: 3rem;
-    padding-left: calc(4rem / var(--font-body-scale));
-    padding-right: calc(4rem / var(--font-body-scale));
+    padding-left: calc(2rem / var(--font-body-scale));
+    padding-right: calc(2rem / var(--font-body-scale));
   }
 }
 
@@ -178,6 +178,9 @@
 @media screen and (min-width: 750px) {
   .footer-block__newsletter:not(:only-child) {
     text-align: left;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
   }
 
   .footer-block__newsletter:not(:only-child) .footer__newsletter {
