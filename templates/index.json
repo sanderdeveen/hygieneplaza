@@ -3,43 +3,39 @@
     "image_banner": {
       "type": "image-banner",
       "blocks": {
-        "heading": {
-          "type": "heading",
+        "1b21b580-25fa-420d-b0b0-3a0022308c12": {
+          "type": "heading-block",
           "settings": {
             "heading": "Image banner",
-            "heading_size": "h0"
-          }
-        },
-        "text": {
-          "type": "text",
-          "settings": {
+            "heading_size": "h1",
+            "header_type": true,
             "text": "Give customers details about the banner image(s) or content on the template.",
-            "text_style": "body"
-          }
-        },
-        "button": {
-          "type": "buttons",
-          "settings": {
-            "button_label_1": "Shop all",
-            "button_link_1": "shopify:\/\/collections\/all",
-            "button_style_secondary_1": true,
-            "button_label_2": "",
+            "text_style": "body",
+            "button_label_1": "Button label",
+            "button_link_1": "",
+            "button_style_secondary_1": false,
+            "button_label_2": "Button label",
             "button_link_2": "",
-            "button_style_secondary_2": false
+            "button_style_secondary_2": false,
+            "collection_img_1": "shopify:\/\/shop_images\/hyhieplaza-handen-wassen.jpg",
+            "collection_url_1": "shopify:\/\/collections\/all-products",
+            "collection_img_2": "shopify:\/\/shop_images\/hyhieplaza-handen-wassen.jpg",
+            "collection_url_2": "shopify:\/\/collections\/all",
+            "collection_img_3": "shopify:\/\/shop_images\/hyhieplaza-handen-wassen.jpg",
+            "collection_url_3": "shopify:\/\/collections",
+            "collection_img_4": "shopify:\/\/shop_images\/hyhieplaza-handen-wassen.jpg",
+            "collection_url_4": "shopify:\/\/collections\/all-products"
           }
         }
       },
       "block_order": [
-        "heading",
-        "text",
-        "button"
+        "1b21b580-25fa-420d-b0b0-3a0022308c12"
       ],
       "settings": {
         "image": "{{ shop.brand.cover_image }}",
         "image_overlay_opacity": 40,
         "image_height": "large",
         "adapt_height_first_image": false,
-        "desktop_content_position": "bottom-center",
         "show_text_box": false,
         "desktop_content_alignment": "center",
         "color_scheme": "background-1",
@@ -63,15 +59,29 @@
           "settings": {
             "text": "<p>Share information about your brand with your customers. Describe a product, make announcements, or welcome customers to your store.<\/p>"
           }
+        },
+        "9faee117-b164-4dad-ab04-542aae2d5d91": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Handen-wassen-kinderen.jpg",
+            "image_width": 50
+          }
+        },
+        "c5ce5ca7-80f2-4add-90e9-c55aa4ae7fb4": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Handen-wassen-kinderen.jpg",
+            "image_width": 100
+          }
         }
       },
       "block_order": [
         "heading",
-        "text"
+        "text",
+        "9faee117-b164-4dad-ab04-542aae2d5d91",
+        "c5ce5ca7-80f2-4add-90e9-c55aa4ae7fb4"
       ],
       "settings": {
-        "desktop_content_position": "center",
-        "content_alignment": "center",
         "color_scheme": "background-1",
         "full_width": true,
         "padding_top": 40,

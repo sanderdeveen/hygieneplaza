@@ -4,8 +4,7 @@
 
 .rich-text__wrapper {
   display: flex;
-  justify-content: center;
-  width: calc(100% - 4rem / var(--font-body-scale));
+  justify-content: space-between;
 }
 
 .rich-text:not(.rich-text--full-width) .rich-text__wrapper {
@@ -28,16 +27,6 @@
 
   .rich-text__wrapper--right {
     justify-content: flex-end;
-  }
-
-  .rich-text__blocks {
-    max-width: 50rem;
-  }
-}
-
-@media screen and (min-width: 990px) {
-  .rich-text__blocks {
-    max-width: 78rem;
   }
 }
 
@@ -83,4 +72,14 @@
 
 .rich-text__blocks.right .rich-text__buttons {
   justify-content: flex-end;
+}
+
+.rich-text__ordered_list li,
+.rich-text__unordered_list li {
+  text-align: left;
+}
+
+.image-container img {
+  height: auto;
+  width: 100%;
 }
