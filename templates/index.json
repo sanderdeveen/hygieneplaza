@@ -32,7 +32,7 @@
         "1b21b580-25fa-420d-b0b0-3a0022308c12"
       ],
       "settings": {
-        "image": "{{ shop.brand.cover_image }}",
+        "image": "shopify:\/\/shop_images\/f24ab94d-9abb-4b91-bed6-805fa2d124ef.jpg",
         "image_overlay_opacity": 40,
         "image_height": "large",
         "adapt_height_first_image": false,
