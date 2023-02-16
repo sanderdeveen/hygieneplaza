@@ -10,7 +10,6 @@
     },
     "82f111f3-e95f-4a3f-9935-aaaf39ac0e8b": {
       "type": "collection-blocks",
-      "disabled": true,
       "blocks": {
         "template--18018562867499__82f111f3-e95f-4a3f-9935-aaaf39ac0e8b-167647165756188885-0": {
           "type": "collection_block",
@@ -39,7 +38,6 @@
     },
     "108e190f-e676-420f-9ce8-217422f69667": {
       "type": "rich-text",
-      "disabled": true,
       "blocks": {
         "template--18018562867499__108e190f-e676-420f-9ce8-217422f69667-1676476369eef9a784-0": {
           "type": "heading",
@@ -51,7 +49,7 @@
         "2155a3ac-3818-4b13-87f3-1a076701699f": {
           "type": "text",
           "settings": {
-            "text": "<p>Share information about your brand with your customers. Describe a product, make announcements, or welcome customers to your store.<\/p>"
+            "text": "<p>Lorem ipsum <strong>dolor sit<\/strong> amet, consectetuer adipiscing elit. Aenean <em>commodo<\/em> ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Lorem ipsum dolor sit amet, <a href=\"\/products\/copy-of-tork-wiping-centerfeed-poetspapier-advanced-1-laags-wit\" title=\"Sale Tork Wiping Centerfeed Poetspapier Advanced 1-laags wit\">consectetuer<\/a> adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. <\/p>"
           }
         }
       },
@@ -75,6 +73,7 @@
         "show_secondary_image": true,
         "show_vendor": true,
         "show_rating": true,
+        "show_btn": true,
         "enable_quick_add": false,
         "enable_filtering": true,
         "filter_type": "vertical",
@@ -83,12 +82,72 @@
         "padding_top": 36,
         "padding_bottom": 36
       }
+    },
+    "8c8a450f-236c-42ec-b685-08b72b8b3a60": {
+      "type": "rich-text",
+      "blocks": {
+        "template--18018562867499__8c8a450f-236c-42ec-b685-08b72b8b3a60-16765511206753ca23-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "<p>SEO tekst<\/p>",
+            "heading_size": "h2"
+          }
+        },
+        "c4a20991-f159-4561-ae7d-b212d9723856": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Lorum Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean <strong>commodo<\/strong> ligula eget dolor. <em>Aenean massa.<\/em> Cum sociis natoque penatibus et magnis dis parturient montes, <a href=\"\/products\/copy-of-tork-wiping-centerfeed-poetspapier-advanced-1-laags-wit\" title=\"Sale Tork Wiping Centerfeed Poetspapier Advanced 1-laags wit\">nascetur<\/a> ridiculus mus.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "template--18018562867499__8c8a450f-236c-42ec-b685-08b72b8b3a60-16765511206753ca23-0",
+        "c4a20991-f159-4561-ae7d-b212d9723856"
+      ],
+      "settings": {
+        "color_scheme": "background-1",
+        "full_width": true,
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "8797cd29-22bf-485c-9b17-0e5a979ea77e": {
+      "type": "question-answer",
+      "blocks": {
+        "template--18018562867499__8797cd29-22bf-485c-9b17-0e5a979ea77e-1676551723ca073175-0": {
+          "type": "faq",
+          "settings": {
+            "heading": "This is the question",
+            "custom_liquid_1": "<ul>\n<li>List item<\/li>\n<li>List item<\/li>\n<li>List item<\/li>\n<\/ul",
+            "content": "<p>Lorum Lorem ipsum dolor sit amet, <strong>consectetuer<\/strong> adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque <em>penatibus<\/em> et magnis dis parturient montes, nascetur ridiculus mus.<\/p>",
+            "custom_liquid_2": "<ol>\n<li>List item<\/li>\n<li>List item<\/li>\n<li>List item<\/li>\n<\/ol>"
+          }
+        },
+        "118a5748-3e2c-4762-8286-c159d76d193c": {
+          "type": "faq",
+          "settings": {
+            "heading": "This is an other question",
+            "custom_liquid_1": "<ul>\n<li>List item<\/li>\n<li>List item<\/li>\n<li>List item<\/li>\n<\/ul",
+            "content": "<p>Lorum Lorem ipsum dolor sit amet, <strong>consectetuer<\/strong> adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque <em>penatibus<\/em> et magnis dis parturient montes, nascetur ridiculus mus.<\/p>",
+            "custom_liquid_2": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--18018562867499__8797cd29-22bf-485c-9b17-0e5a979ea77e-1676551723ca073175-0",
+        "118a5748-3e2c-4762-8286-c159d76d193c"
+      ],
+      "settings": {
+        "heading": "FAQ heading"
+      }
     }
   },
   "order": [
     "banner",
     "82f111f3-e95f-4a3f-9935-aaaf39ac0e8b",
     "108e190f-e676-420f-9ce8-217422f69667",
-    "product-grid"
+    "product-grid",
+    "8c8a450f-236c-42ec-b685-08b72b8b3a60",
+    "8797cd29-22bf-485c-9b17-0e5a979ea77e"
   ]
 }
