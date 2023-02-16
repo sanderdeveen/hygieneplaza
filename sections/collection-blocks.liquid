@@ -1,0 +1,75 @@
+{{ 'section-collection-blocks.css' | asset_url | stylesheet_tag }}
+
+<div class="page-width collection-blocks-container">
+  {%- if section.settings.title -%}
+    <span class="h2 collection-blocks-title">{{ section.settings.title }}</span>
+  {%- endif -%}
+  <ul class="list-unstyled grid grid--2-col-tablet-down grid--6-col-desktop collection-blocks-container">
+    {%- for block in section.blocks -%}
+      <li class="grid__item">
+        <a href="{{ block.settings.collection_url }}">
+          {%- if block.settings.collection_img != blank -%}
+            {{ block.settings.collection_img | image_url: width: 150 | image_url: height: 150 | image_tag:
+              loading: 'lazy'
+            }}
+          {%- else -%}
+            <div style="background-color: lightgray; width: 100%; height: 100%;">
+              {{ 'image' | placeholder_svg_tag: 'placeholder-svg' }}
+            </div>
+          {%- endif -%}
+          <span class="collection-block-text">{{ block.settings.collection_text }}<span>
+        </a>
+      </li>
+    {%- endfor -%}
+  </ul>
+</div>
+{% schema %}
+{
+  "name": "Collection blocks",
+  "tag": "section", 
+  "class": "section section-collection-blocks",
+  "settings": [
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Collection title",
+      "default": "Title"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "collection_block",
+      "name": "Collection block",
+      "settings": [
+        {
+          "type": "collection",
+          "id": "collection_url",
+          "label": "Collection url"
+        },
+        {
+          "type": "image_picker",
+          "id": "collection_img",
+          "label": "Collection image",
+          "info": "Use 190x190 png max 50kb"
+        },
+        {
+          "type": "text",
+          "id": "collection_text",
+          "label": "text",
+          "default": "Collection Name"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Collection blocks",
+      "blocks": [
+        {
+          "type": "collection_block"
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}

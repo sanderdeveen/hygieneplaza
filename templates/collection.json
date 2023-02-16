@@ -4,8 +4,66 @@
       "type": "main-collection-banner",
       "settings": {
         "show_collection_description": true,
-        "show_collection_image": false,
-        "color_scheme": "background-1"
+        "show_collection_image": true,
+        "collection_image_position": true
+      }
+    },
+    "82f111f3-e95f-4a3f-9935-aaaf39ac0e8b": {
+      "type": "collection-blocks",
+      "disabled": true,
+      "blocks": {
+        "template--18018562867499__82f111f3-e95f-4a3f-9935-aaaf39ac0e8b-167647165756188885-0": {
+          "type": "collection_block",
+          "settings": {
+            "collection_url": "all-products",
+            "collection_img": "shopify:\/\/shop_images\/hyhieplaza-handen-wassen.jpg",
+            "collection_text": "Collection Name"
+          }
+        },
+        "2d8bd627-5165-44e7-acb6-43fa8fb050ba": {
+          "type": "collection_block",
+          "settings": {
+            "collection_url": "",
+            "collection_img": "shopify:\/\/shop_images\/hyhieplaza-handen-wassen.jpg",
+            "collection_text": "Collection Name long name"
+          }
+        }
+      },
+      "block_order": [
+        "template--18018562867499__82f111f3-e95f-4a3f-9935-aaaf39ac0e8b-167647165756188885-0",
+        "2d8bd627-5165-44e7-acb6-43fa8fb050ba"
+      ],
+      "settings": {
+        "title": "Title"
+      }
+    },
+    "108e190f-e676-420f-9ce8-217422f69667": {
+      "type": "rich-text",
+      "disabled": true,
+      "blocks": {
+        "template--18018562867499__108e190f-e676-420f-9ce8-217422f69667-1676476369eef9a784-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "<p>Talk about your brand<\/p>",
+            "heading_size": "h1"
+          }
+        },
+        "2155a3ac-3818-4b13-87f3-1a076701699f": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Share information about your brand with your customers. Describe a product, make announcements, or welcome customers to your store.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "template--18018562867499__108e190f-e676-420f-9ce8-217422f69667-1676476369eef9a784-0",
+        "2155a3ac-3818-4b13-87f3-1a076701699f"
+      ],
+      "settings": {
+        "color_scheme": "background-1",
+        "full_width": true,
+        "padding_top": 0,
+        "padding_bottom": 0
       }
     },
     "product-grid": {
@@ -17,7 +75,7 @@
         "show_secondary_image": true,
         "show_vendor": true,
         "show_rating": true,
-        "enable_quick_add": true,
+        "enable_quick_add": false,
         "enable_filtering": true,
         "filter_type": "vertical",
         "enable_sorting": true,
@@ -29,6 +87,8 @@
   },
   "order": [
     "banner",
+    "82f111f3-e95f-4a3f-9935-aaaf39ac0e8b",
+    "108e190f-e676-420f-9ce8-217422f69667",
     "product-grid"
   ]
 }

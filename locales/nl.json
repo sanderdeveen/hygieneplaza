@@ -1,5 +1,9 @@
 {
   "general": {
+    "price_vat": {
+      "include_vat": "incl btw",
+      "excluding_vat": "ex btw"
+    },
     "password_page": {
       "login_form_heading": "Ga winkel binnen met wachtwoord:",
       "login_password_button": "Ga naar binnen met wachtwoord",
