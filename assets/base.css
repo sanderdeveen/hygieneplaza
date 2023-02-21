@@ -2599,6 +2599,8 @@ details[open] > .header__submenu {
   .header__inline-menu {
     display: block;
     padding: 0;
+    max-width: var(--page-width);
+    margin: 0 auto;
   }
 }
 

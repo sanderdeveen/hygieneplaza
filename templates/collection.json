@@ -1,5 +1,16 @@
 {
   "sections": {
+    "9ac6d46a-6be8-4842-9af2-b0b92d43d154": {
+      "type": "breadcrumbs",
+      "settings": {
+        "menu": "main-menu",
+        "show_home_link": true,
+        "show_tagged_link": true,
+        "show_non_link": true,
+        "hide_on_mobile": true,
+        "alignment": "left"
+      }
+    },
     "banner": {
       "type": "main-collection-banner",
       "settings": {
@@ -143,6 +154,7 @@
     }
   },
   "order": [
+    "9ac6d46a-6be8-4842-9af2-b0b92d43d154",
     "banner",
     "82f111f3-e95f-4a3f-9935-aaaf39ac0e8b",
     "108e190f-e676-420f-9ce8-217422f69667",

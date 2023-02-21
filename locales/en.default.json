@@ -57,6 +57,10 @@
       "next_slide": "Slide right",
       "previous_slide": "Slide left",
       "name": "Slider"
+    },
+    "meta": {
+      "tags": "tagged \"{{ tags }}\"",
+      "page": "Page {{ page }}"
     }
   },
   "newsletter": {
@@ -150,7 +154,7 @@
       "aanvullende_informatie": "Additonal information",
       "product_omschrijving": "Product omschrijving",
       "read_more": "Read more",
-      "read_less": "Toon minder",
+      "read_less": "Show less",
       "specifications": "Specifications",
       "share": "Share this product",
       "sold_out": "Sold out",
@@ -198,6 +202,13 @@
     }
   },
   "templates": {
+    "index": {
+      "navigation_title": "Home"
+    },
+    "collections": {
+      "title": "Collections",
+      "collections": "collections"
+    },
     "search": {
       "no_results": "No results found for “{{ terms }}”. Check the spelling or use a different word or phrase.",
       "page": "Page",
@@ -214,7 +225,8 @@
       "search_for": "Search for “{{ terms }}”"
     },
     "cart": {
-      "cart": "Cart"
+      "cart": "Cart",
+      "title": "Cart"
     },
     "contact": {
       "form": {

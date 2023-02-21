@@ -1,5 +1,16 @@
 {
   "sections": {
+    "78eb660b-65fc-4fa8-9acd-d0df624cbadb": {
+      "type": "breadcrumbs",
+      "settings": {
+        "menu": "main-menu",
+        "show_home_link": true,
+        "show_tagged_link": true,
+        "show_non_link": true,
+        "hide_on_mobile": false,
+        "alignment": "left"
+      }
+    },
     "main": {
       "type": "main-product",
       "blocks": {
@@ -156,8 +167,8 @@
         "content_layout": "no-overlap",
         "color_scheme": "background-2",
         "mobile_content_alignment": "left",
-        "padding_top": 0,
-        "padding_bottom": 0
+        "padding_top": 8,
+        "padding_bottom": 8
       }
     },
     "0b90f594-51a3-46dc-8af7-1971376fa4aa": {
@@ -211,6 +222,7 @@
     }
   },
   "order": [
+    "78eb660b-65fc-4fa8-9acd-d0df624cbadb",
     "main",
     "product-recommendations",
     "81698ac2-bedd-4f0d-80b7-81d70f8e6980",

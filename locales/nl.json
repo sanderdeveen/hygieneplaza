@@ -57,6 +57,10 @@
       "next_slide": "Naar rechts schuiven",
       "previous_slide": "Naar links schuiven",
       "name": "Schuifregelaar"
+    },
+    "meta": {
+      "tags": "tagged \"{{ tags }}\"",
+      "page": "Page {{ page }}"
     }
   },
   "newsletter": {
@@ -130,7 +134,7 @@
         "unit_price": "Eenheidsprijs"
       },
       "read_more": "Lees meer",
-      "read_less": "Lees minder",
+      "read_less": "Toon minder",
       "share": "Dit product delen",
       "sold_out": "Uitverkocht",
       "unavailable": "Niet beschikbaar",
@@ -198,6 +202,13 @@
     }
   },
   "templates": {
+    "index": {
+      "navigation_title": "Home"
+    },
+    "collections": {
+      "title": "Collecties",
+      "collections": "Collecties"
+    },
     "search": {
       "no_results": "Geen resultaten gevonden voor “{{ terms }}”. Controleer de spelling of gebruik een ander woord of een andere zin.",
       "results_with_count": {
@@ -214,7 +225,8 @@
       }
     },
     "cart": {
-      "cart": "Winkelwagen"
+      "cart": "Winkelwagen",
+      "title": "Winkelwagen"
     },
     "contact": {
       "form": {
