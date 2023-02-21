@@ -2,7 +2,7 @@
   "general": {
     "price_vat": {
       "include_vat": "incl vat",
-      "excluding_vat": "ex vat"
+      "exclude_vat": "ex vat"
     },
     "password_page": {
       "login_form_heading": "Enter store using password:",
@@ -108,6 +108,7 @@
   },
   "products": {
     "product": {
+
       "add_to_cart": "Add to cart",
       "buy_now": "Buy now",
       "choose_options": "Choose options",
@@ -115,6 +116,7 @@
       "description": "Description",
       "on_sale": "Sale",
       "product_variants": "Product variants",
+      "product_alt_text": "This product is also available in:",
       "media": {
         "gallery_viewer": "Gallery Viewer",
         "load_image": "Load image {{ index }} in gallery view",
@@ -146,6 +148,7 @@
         "sale_price": "Sale price",
         "unit_price": "Unit price"
       },
+      "specifications": "Specifications",
       "share": "Share this product",
       "sold_out": "Sold out",
       "unavailable": "Unavailable",

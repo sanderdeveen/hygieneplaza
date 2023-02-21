@@ -1,0 +1,90 @@
+<link rel="stylesheet" href="{{ 'component-rte.css' | asset_url }}" media="print" onload="this.media='all'">
+<link rel="stylesheet" href="{{ 'component-product-information.css' | asset_url }}" media="print" onload="this.media='all'">
+
+<noscript>{{ 'component-rte.css' | asset_url | stylesheet_tag }}</noscript>
+
+<style>
+  .product-information-specifications:before {
+    content: "{{ 'products.product.specifications' | t }}";
+    font-family: var(--font-heading-family);
+    font-style: var(--font-heading-style);
+    font-weight: var(--font-heading-weight);
+    letter-spacing: calc(var(--font-heading-scale) * 0.06rem);
+    color: rgb(var(--color-foreground));
+    line-height: calc(1 + 0.3 / max(1, var(--font-heading-scale)));
+    word-break: break-word;
+    font-size: calc(var(--font-heading-scale) * 1.8rem);
+  }
+</style>
+
+<div class="page-width grid grid--1-col grid--2-col-tablet product-information-container" id="product-information-container">
+  <div class="grid__item product-information-left">
+    {%- if product.description != blank -%}
+      <div class="product__description rte quick-add-hidden">
+        {{ product.description }}
+      </div>
+    {%- endif -%}
+  </div>
+  <div class="grid__item product-information-right">
+    <ul class="list-unstyled product-information-specifications">
+    {%- for block in section.blocks -%}
+      {%- case block.type -%}
+        {%- when 'product-specification' -%}
+            {%- if block.settings.specification_result != blank  -%}
+              <li><b>{{ block.settings.specification_heading }}</b><span>{{ block.settings.specification_result }}</span></li>
+            {%- endif -%}
+          {%- endcase -%}
+        {%- endfor -%}
+      </ul>
+  </div>
+</div>
+<button id="read-more-description" onclick="opendescription()">Lees meer</button>
+
+<script>
+  function opendescription() {
+    var element = document.getElementById("product-information-container");
+    var btntext = document.getElementById("read-more-description");
+    element.classList.toggle("is-open");
+    if (element.classList.contains('is-open')) {
+      btntext.innerHTML = "Lees minder";
+    } else {
+      btntext.innerHTML = "Lees meer";
+    }
+  }
+</script>
+
+{% schema %}
+{
+  "name": "Product information",
+  "tag": "section",
+  "class": "section product-description-information",
+  "settings": [
+  ],
+  "blocks": [
+    {
+      "type": "product-specification",
+      "name": "Product specification",
+      "settings": [
+        {
+          "type": "text",
+          "id": "specification_heading",
+          "default": "Specification heading",
+          "label": "Specification heading or select field"
+        },
+        {
+          "type": "richtext",
+          "id": "specification_result",
+          "label": "Set Specification field"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Product information",
+      "blocks": [
+      ]
+    }
+  ]
+}
+{% endschema %}

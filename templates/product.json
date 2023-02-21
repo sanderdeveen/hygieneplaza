@@ -20,6 +20,11 @@
           "settings": {
           }
         },
+        "258e5126-e24d-4401-a45c-e530b64fa5ec": {
+          "type": "product_variant",
+          "settings": {
+          }
+        },
         "variant_picker": {
           "type": "variant_picker",
           "settings": {
@@ -31,57 +36,17 @@
           "settings": {
           }
         },
-        "buy_buttons": {
-          "type": "buy_buttons",
+        "fb9871d7-678c-4ed6-837e-3f75f6cfabac": {
+          "type": "quote",
           "settings": {
-            "show_dynamic_checkout": true
+            "quote_heading": "Offerte aanvragen?",
+            "quote_liquid": "<p>Grotere aantallen bestellen? Neem dan contact op voor een nog betere prijs, mail <a href=\"mailto:webshop@cemex.nl\">webshop@cemex.nl<\/a> of bel <a href=\"tel:+31 (0)79 3466000\">+31 (0)79 3466000<\/a><\/p>"
           }
         },
-        "description": {
-          "type": "description",
+        "d2ab127f-5e8a-41df-b5c7-3b02488682cd": {
+          "type": "product_usp",
           "settings": {
-          }
-        },
-        "collapsible-row-0": {
-          "type": "collapsible_tab",
-          "settings": {
-            "heading": "Materials",
-            "icon": "leather",
-            "content": "",
-            "page": ""
-          }
-        },
-        "collapsible-row-1": {
-          "type": "collapsible_tab",
-          "settings": {
-            "heading": "Shipping & Returns",
-            "icon": "truck",
-            "content": "",
-            "page": ""
-          }
-        },
-        "collapsible-row-2": {
-          "type": "collapsible_tab",
-          "settings": {
-            "heading": "Dimensions",
-            "icon": "ruler",
-            "content": "",
-            "page": ""
-          }
-        },
-        "collapsible-row-3": {
-          "type": "collapsible_tab",
-          "settings": {
-            "heading": "Care Instructions",
-            "icon": "heart",
-            "content": "",
-            "page": ""
-          }
-        },
-        "share": {
-          "type": "share",
-          "settings": {
-            "share_label": "Share"
+            "product_usp_list": "<p>- 6 dagen in de week bezorgd.<\/p><p>- Het grootste assortiment.<\/p><p>- Niet goed? Geld terug.<\/p><p>- Deskundig advies.<\/p>"
           }
         }
       },
@@ -89,15 +54,11 @@
         "title",
         "vendor",
         "price",
+        "258e5126-e24d-4401-a45c-e530b64fa5ec",
         "variant_picker",
         "quantity_selector",
-        "buy_buttons",
-        "description",
-        "collapsible-row-0",
-        "collapsible-row-1",
-        "collapsible-row-2",
-        "collapsible-row-3",
-        "share"
+        "fb9871d7-678c-4ed6-837e-3f75f6cfabac",
+        "d2ab127f-5e8a-41df-b5c7-3b02488682cd"
       ],
       "settings": {
         "enable_sticky_info": false,
@@ -128,10 +89,44 @@
         "padding_top": 36,
         "padding_bottom": 28
       }
+    },
+    "81698ac2-bedd-4f0d-80b7-81d70f8e6980": {
+      "type": "product-information",
+      "blocks": {
+        "6643bfa6-8f68-4d13-b47f-b092ebe0f3b4": {
+          "type": "product-specification",
+          "settings": {
+            "specification_heading": "Titel",
+            "specification_result": "<p>{{ product.title }}<\/p>"
+          }
+        },
+        "f4829636-f922-40e4-8e40-b491a05a4574": {
+          "type": "product-specification",
+          "settings": {
+            "specification_heading": "Product label",
+            "specification_result": "<p>{{ product.metafields.custom.product_label.value }}<\/p>"
+          }
+        },
+        "9ec797b7-0afb-4a7f-b365-4705ab4af85d": {
+          "type": "product-specification",
+          "settings": {
+            "specification_heading": "Merk",
+            "specification_result": "<p>{{ product.vendor }}<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "6643bfa6-8f68-4d13-b47f-b092ebe0f3b4",
+        "f4829636-f922-40e4-8e40-b491a05a4574",
+        "9ec797b7-0afb-4a7f-b365-4705ab4af85d"
+      ],
+      "settings": {
+      }
     }
   },
   "order": [
     "main",
-    "product-recommendations"
+    "product-recommendations",
+    "81698ac2-bedd-4f0d-80b7-81d70f8e6980"
   ]
 }
