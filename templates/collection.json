@@ -7,7 +7,7 @@
         "show_home_link": true,
         "show_tagged_link": true,
         "show_non_link": true,
-        "hide_on_mobile": true,
+        "hide_on_mobile": false,
         "alignment": "left"
       }
     },
