@@ -108,12 +108,14 @@
   },
   "products": {
     "product": {
+      "aanvullende_informatie": "Aanvullende informatie",
       "add_to_cart": "Aan winkelwagen toevoegen",
       "buy_now": "Koop nu",
       "description": "Beschrijving",
       "on_sale": "Aanbieding",
-      "product_variants": "Productvarianten",
       "product_alt_text": "Dit product is ook leverbaar in:",
+      "product_variants": "Productvarianten",
+      "product_omschrijving": "Product omschrijving",
       "specifications": "Specificaties",
       "quantity": {
         "label": "Aantal",

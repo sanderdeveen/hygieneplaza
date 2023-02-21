@@ -233,6 +233,7 @@
   align-items: center;
   flex-wrap: wrap;
   gap: 0.4rem;
+  min-height: 4.4rem;
 }
 
 .card__heading:last-child {

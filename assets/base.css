@@ -630,7 +630,8 @@ h6:empty {
 }
 
 .link,
-.customer a {
+.customer a,
+.quote-request a {
   cursor: pointer;
   display: inline-block;
   border: none;

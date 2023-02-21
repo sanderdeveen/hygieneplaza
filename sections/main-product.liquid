@@ -395,7 +395,7 @@
                 </details>
               </div>
             {%- when 'quantity_selector' -%}
-              <div class="quantity-and-btn">
+              <div class="quantity-and-btn {% if block.settings.show_fixed == true -%}quantity-and-btn--fixed-mobile {%- endif -%}">
                 <div
                   class="product-form__input product-form__quantity{% if settings.inputs_shadow_vertical_offset != 0 and settings.inputs_shadow_vertical_offset < 0 %} product-form__quantity-top{% endif %}"
                   {{ block.shopify_attributes }}
@@ -1349,7 +1349,15 @@
     {
       "type": "quantity_selector",
       "name": "t:sections.main-product.blocks.quantity_selector.name",
-      "limit": 1
+      "limit": 1,
+      "settings": [
+        {
+          "type": "checkbox",
+          "id": "show_fixed",
+          "label": "Shows buy btn fixed on mobile",
+          "default": true
+        }
+      ]
     },
     {
       "type": "variant_picker",
