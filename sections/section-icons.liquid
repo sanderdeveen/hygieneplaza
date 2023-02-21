@@ -1,0 +1,84 @@
+<link rel="stylesheet" href="{{ 'component-icons.css' | asset_url }}" media="print" onload="this.media='all'">
+
+<link rel="stylesheet" href="{{ 'component-slider.css' | asset_url }}" media="print" onload="this.media='all'">
+<noscript>{{ 'component-slider.css' | asset_url | stylesheet_tag }}</noscript>
+
+<div class="page-width icon-slider-container">
+  <slider-component class="icon-slider-component">
+    <ul class="list-unstyled slider slider--mobile icon-slider">
+      {%- for block in section.blocks -%}
+        {%- case block.type -%}
+          {%- when 'logo' -%}
+            <li class="grid__item slider__slide" style="width:{{- block.settings.logo_width -}}%;">
+              <a class="{%- if block.settings.url == blank -%} no-link {%- endif -%}" href="{{ block.settings.url }}">
+                {% if block.settings.logo != blank  %}
+                {{ block.settings.logo | image_url: width: 50 | image_tag:
+                  loading: 'lazy',
+                  widths: '50'
+                }}
+                {%- else -%}
+                  {{ 'image' | placeholder_svg_tag: 'placeholder-svg placeholder' }}
+                {%- endif -%}
+              </a>
+            </li>
+        {%- endcase -%}
+      {%- endfor -%}
+    </ul>
+  </slider-component>
+</div>
+
+{% schema %}
+{
+  "name": "Vendor logo's",
+  "tag": "section",
+  "class": "section",
+  "settings": [
+
+  ],
+  "blocks": [
+    {
+      "type": "logo",
+      "name": "Vendor logo's",
+      "settings": [
+        {
+          "type": "url",
+          "id": "url",
+          "label": "vendor url"
+        },
+        {
+          "type": "image_picker",
+          "id": "logo",
+          "label": "Logo for vendor use 50x50 max 50kb"
+        },
+        {
+          "type": "range",
+          "id": "logo_width",
+          "min": 10,
+          "max": 100,
+          "step": 10,
+          "unit": "%",
+          "label": "Logo container width",
+          "default": 30,
+          "info": "Mobile"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Vendor logo",
+      "blocks": [
+        {
+          "type": "logo"
+        },
+        {
+          "type": "logo"
+        },
+        {
+          "type": "logo"
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}

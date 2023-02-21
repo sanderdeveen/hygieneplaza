@@ -1,0 +1,35 @@
+.icon-slider-container {
+  margin: 1.6rem auto;
+}
+
+.icon-slider-container .no-link {
+  pointer-events: none;
+}
+
+.icon-slider {
+  margin-bottom: 0 !important;
+  display: flex;
+  gap: 1rem;
+}
+
+.icon-slider-container .slider__slide {
+  position: relative;
+}
+
+.icon-slider a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+}
+
+@media screen and (min-width: 750px) {
+  .icon-slider-container {
+    margin: 2.6rem auto;
+  }
+
+  .icon-slider-component ul {
+    flex-wrap: wrap;
+  }
+}

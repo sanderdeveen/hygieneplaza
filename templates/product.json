@@ -123,11 +123,98 @@
       ],
       "settings": {
       }
+    },
+    "f49ae5b6-7b93-4d3a-ad07-20ffe2f7d248": {
+      "type": "image-with-text",
+      "blocks": {
+        "template--18018561229099__f49ae5b6-7b93-4d3a-ad07-20ffe2f7d248-16769765202518ecfb-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "Keuze hulp",
+            "heading_size": "h2"
+          }
+        },
+        "template--18018561229099__f49ae5b6-7b93-4d3a-ad07-20ffe2f7d248-16769765202518ecfb-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Lorum ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.<\/p>",
+            "text_style": "subtitle"
+          }
+        }
+      },
+      "block_order": [
+        "template--18018561229099__f49ae5b6-7b93-4d3a-ad07-20ffe2f7d248-16769765202518ecfb-0",
+        "template--18018561229099__f49ae5b6-7b93-4d3a-ad07-20ffe2f7d248-16769765202518ecfb-1"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/footer-image-service.png",
+        "height": "adapt",
+        "desktop_image_width": "small",
+        "layout": "image_first",
+        "desktop_content_position": "middle",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "color_scheme": "background-2",
+        "mobile_content_alignment": "left",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "0b90f594-51a3-46dc-8af7-1971376fa4aa": {
+      "type": "section-icons",
+      "blocks": {
+        "b4f8997c-f064-4e0a-91db-ee5385e5507d": {
+          "type": "logo",
+          "settings": {
+            "url": "",
+            "logo_width": 30
+          }
+        },
+        "5e1e7de9-1dca-4ff8-883b-a358cbf4de5a": {
+          "type": "logo",
+          "settings": {
+            "url": "",
+            "logo_width": 30
+          }
+        },
+        "0fce287c-79e4-46f0-93d3-2276065865e9": {
+          "type": "logo",
+          "settings": {
+            "url": "",
+            "logo_width": 30
+          }
+        },
+        "378d4360-3b88-4229-afb9-20e2a225dcb1": {
+          "type": "logo",
+          "settings": {
+            "url": "",
+            "logo_width": 30
+          }
+        },
+        "512f4761-fb95-49c2-8cfb-286ed56d5d19": {
+          "type": "logo",
+          "settings": {
+            "url": "",
+            "logo_width": 30
+          }
+        }
+      },
+      "block_order": [
+        "b4f8997c-f064-4e0a-91db-ee5385e5507d",
+        "5e1e7de9-1dca-4ff8-883b-a358cbf4de5a",
+        "0fce287c-79e4-46f0-93d3-2276065865e9",
+        "378d4360-3b88-4229-afb9-20e2a225dcb1",
+        "512f4761-fb95-49c2-8cfb-286ed56d5d19"
+      ],
+      "settings": {
+      }
     }
   },
   "order": [
     "main",
     "product-recommendations",
-    "81698ac2-bedd-4f0d-80b7-81d70f8e6980"
+    "81698ac2-bedd-4f0d-80b7-81d70f8e6980",
+    "f49ae5b6-7b93-4d3a-ad07-20ffe2f7d248",
+    "0b90f594-51a3-46dc-8af7-1971376fa4aa"
   ]
 }

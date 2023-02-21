@@ -5,7 +5,7 @@
 }
 
 .product-information-specifications li:nth-child(even) {
-  background-color: lightgray;
+  background-color: var(--gradient-base-background-2);
 }
 
 .product-information-specifications {

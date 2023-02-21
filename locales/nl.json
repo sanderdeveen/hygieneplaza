@@ -129,6 +129,8 @@
         "sale_price": "Aanbiedingsprijs",
         "unit_price": "Eenheidsprijs"
       },
+      "read_more": "Lees meer",
+      "read_less": "Lees minder",
       "share": "Dit product delen",
       "sold_out": "Uitverkocht",
       "unavailable": "Niet beschikbaar",
