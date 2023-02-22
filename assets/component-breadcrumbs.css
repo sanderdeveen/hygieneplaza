@@ -61,3 +61,13 @@
   .breadcrumbs__divider .icon {
     transform: rotate(270deg);
   }
+
+  .breadcrumbs__item:first-child {
+    display: none;
+  }
+
+  @media screen and (min-width:750px) {
+    .breadcrumbs__item:first-child {
+      display: block;
+    }
+  }

@@ -24,8 +24,7 @@
                   <h2 class="totals__subtotal">{{ 'sections.cart.subtotal' | t }}</h2>
                   <p class="totals__subtotal-value">{{ cart.total_price | money_with_currency }}</p>
                 </div>
-
-                <div>
+              <div>
                   {%- if cart.cart_level_discount_applications.size > 0 -%}
                     <ul class="discounts list-unstyled" role="list" aria-label="{{ 'customer.order.discount' | t }}">
                       {%- for discount in cart.cart_level_discount_applications -%}
@@ -69,6 +68,21 @@
                   {{ content_for_additional_checkout_buttons }}
                 </div>
               {%- endif -%}
+
+              <ul class="list list-payment" role="list">
+                {%- for type in shop.enabled_payment_types -%}
+                  <li class="list-payment__item">
+                    {{ type | payment_type_svg_tag: class: 'icon icon--full-color' }}
+                  </li>
+                {%- endfor -%}
+              </ul>
+
+              {%- if section.settings.usp_list != blank -%}
+                <ul class="list-unstyled product-usp">
+                  {{ section.settings.usp_list | replace: "-", "<li><figure></figure>" | replace: ".", ".</li>" | remove: "<p></p>" }}
+                </ul>
+              {%- endif -%}
+
           {%- endcase -%}
         {% endfor %}
 
@@ -103,6 +117,14 @@
 {
   "name": "t:sections.main-cart-footer.name",
   "class": "cart__footer-wrapper",
+  "settings": [
+    {
+      "type": "richtext",
+      "id": "usp_list",
+      "label": "Usp list",
+      "info": "- USe a product usp like this. ( starts with - and end with .)"
+    }
+  ],
   "blocks": [
     {
       "type": "subtotal",
