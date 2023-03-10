@@ -133,7 +133,7 @@
           "announcement-bar-0": {
             "type": "announcement",
             "settings": {
-              "text": "Welcome to our store",
+              "text": "Vandaag besteld voor 15:00, morgen in huis",
               "text_alignment": "center",
               "color_scheme": "background-1",
               "link": ""
@@ -169,22 +169,22 @@
           "footer-0": {
             "type": "link_list",
             "settings": {
-              "heading": "Quick links",
+              "heading": "Klantenservice",
               "menu": "footer"
             }
           },
           "footer-1": {
             "type": "link_list",
             "settings": {
-              "heading": "Info",
-              "menu": "footer"
+              "heading": "Zakelijk bestellen",
+              "menu": "footer-menu-zakelijk"
             }
           },
           "footer-2": {
             "type": "text",
             "settings": {
-              "heading": "Our mission",
-              "subtext": "<p>Share contact information, store details, and brand content with your customers.<\/p>"
+              "heading": "Hygieneplaza.com",
+              "subtext": "<p>Hygieneplaza.com is een internationale totaalleverancier van hygiëneproducten, persoonlijke beschermingsmiddelen, (medische) disposables en verpakkingen.<\/p><p><a href=\"mailto:info@hygieneplaza.com\" target=\"_blank\" title=\"info@hygieneplaza.com\">info@hygieneplaza.com<br\/><\/a><a href=\"tel:+31793466000\" target=\"_blank\" title=\"tel:+31793466000\">079 – 346 60 00<\/a><\/p><p><\/p>"
             }
           }
         },
@@ -196,10 +196,10 @@
         "settings": {
           "color_scheme": "background-1",
           "newsletter_enable": true,
-          "newsletter_heading": "Subscribe to our emails",
+          "newsletter_heading": "Direct 10% korting ontvangen? Schrijf u dan nu in voor onze nieuwsbrief!",
           "show_social": true,
-          "enable_country_selector": false,
-          "enable_language_selector": false,
+          "enable_country_selector": true,
+          "enable_language_selector": true,
           "payment_enable": true,
           "margin_top": 48,
           "padding_top": 36,
