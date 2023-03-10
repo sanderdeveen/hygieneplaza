@@ -7,6 +7,78 @@
         "padding_bottom": 36
       }
     },
+    "b9d73747-e025-415b-833f-7fb4e0d9708c": {
+      "type": "multicolumn",
+      "blocks": {
+        "template--18277530075435__b9d73747-e025-415b-833f-7fb4e0d9708c-1678456785ab924829-0": {
+          "type": "column",
+          "settings": {
+            "title": "Contactgegevens",
+            "text": "<p>+31 (0)79 - 346 6000<br\/>info@hygieneplaza.com<br\/>KVK- en BTW-nummer<br\/>KVK: 24147391<br\/>BTW: NL 006331026B01<br\/><\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "template--18277530075435__b9d73747-e025-415b-833f-7fb4e0d9708c-1678456785ab924829-1": {
+          "type": "column",
+          "settings": {
+            "title": "Bankgegevens Nederland",
+            "text": "<p>+31 (0)79 - 346 6000<br\/>info@hygieneplaza.com<br\/>KVK- en BTW-nummer<br\/>KVK: 24147391<br\/>BTW: NL 006331026B01<\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "template--18277530075435__b9d73747-e025-415b-833f-7fb4e0d9708c-1678456785ab924829-2": {
+          "type": "column",
+          "settings": {
+            "title": "Bankgegevens Nederland",
+            "text": "<p>Rabobank<br\/>NL51RABO0360468985<br\/>RABONL2U<\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "87f487ac-f205-49fe-b1f1-51002993cd0c": {
+          "type": "column",
+          "settings": {
+            "title": "Openingstijden",
+            "text": "<p>Maandag: 08:00 - 17:00<br\/>Dinsdag: 08:00 - 17:00<br\/>Woensdag: 08:00 - 17:00<br\/>Donderdag: 08:00 - 17:00<br\/>Vrijdag: 08:00 - 17:00<br\/>Zaterdag: Gesloten<br\/>Zondag: Gesloten<\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--18277530075435__b9d73747-e025-415b-833f-7fb4e0d9708c-1678456785ab924829-0",
+        "template--18277530075435__b9d73747-e025-415b-833f-7fb4e0d9708c-1678456785ab924829-1",
+        "template--18277530075435__b9d73747-e025-415b-833f-7fb4e0d9708c-1678456785ab924829-2",
+        "87f487ac-f205-49fe-b1f1-51002993cd0c"
+      ],
+      "settings": {
+        "title": "",
+        "heading_size": "h1",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "columns_desktop": 4,
+        "column_alignment": "left",
+        "background_style": "primary",
+        "button_label": "",
+        "button_link": "",
+        "color_scheme": "background-1",
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "458b9a8a-be84-4c10-8e37-a18db48ea501": {
+      "type": "custom-liquid",
+      "settings": {
+        "custom_liquid": "<div class=\"page-width\">\n<iframe src=\"https:\/\/www.google.com\/maps\/embed?pb=!1m18!1m12!1m3!1d2453.8706313084285!2d4.530904816318405!3d52.045669079023895!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c5ceec2969b701%3A0xfc9e460ddc79996a!2sSpectrumlaan%205%2C%202665%20NM%20Bleiswijk!5e0!3m2!1sen!2snl!4v1678458454113!5m2!1sen!2snl\" width=\"100%\" height=\"450\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"><\/iframe>\n<\/div>",
+        "color_scheme": "background-1",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
     "form": {
       "type": "contact-form",
       "settings": {
@@ -20,6 +92,8 @@
   },
   "order": [
     "main",
+    "b9d73747-e025-415b-833f-7fb4e0d9708c",
+    "458b9a8a-be84-4c10-8e37-a18db48ea501",
     "form"
   ]
 }

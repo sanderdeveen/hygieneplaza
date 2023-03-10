@@ -87,6 +87,9 @@
     "complementary_products": "Complementary products"
   },
   "blogs": {
+    "general": {
+      "categories": "Categories"
+    },
     "article": {
       "blog": "Blog",
       "read_more_title": "Read more: {{ title }}",

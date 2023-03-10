@@ -43,6 +43,7 @@
 .footer__content-bottom {
   border-top: solid 0.1rem rgba(var(--color-foreground), 0.08);
   padding-top: 3rem;
+  background-color: #FFF;
 }
 
 .footer__content-bottom:only-child {
@@ -50,7 +51,7 @@
 }
 
 .footer__content-bottom-wrapper {
-  display: flex;
+  text-align: center;
   width: 100%;
 }
 
@@ -96,7 +97,6 @@
   .footer__column--info {
     padding-left: 0;
     padding-right: 0;
-    align-items: flex-end;
   }
 }
 
@@ -372,6 +372,7 @@ noscript .localization-selector.link {
 .footer__copyright {
   text-align: center;
   margin-top: 1.5rem;
+  color: #000;
 }
 
 @media screen and (min-width: 750px) {
@@ -516,4 +517,8 @@ noscript .localization-selector.link {
       padding-left: 3rem;
     }
   }
+}
+
+.section-footer-padding {
+  padding-bottom: 0 !important;
 }

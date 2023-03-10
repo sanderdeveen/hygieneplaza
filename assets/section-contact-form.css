@@ -37,3 +37,11 @@
     grid-column-gap: 2rem;
   }
 }
+
+@media screen and (min-width: 750px) {
+  .contact-inner {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+

@@ -87,6 +87,9 @@
     "complementary_products": "Aanvullende producten"
   },
   "blogs": {
+      "general": {
+        "categories": "Categoriën"
+    },
     "article": {
       "blog": "Blog",
       "read_more_title": "Lees verder: {{ title }}",

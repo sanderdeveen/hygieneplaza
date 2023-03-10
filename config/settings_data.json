@@ -138,10 +138,21 @@
               "color_scheme": "background-1",
               "link": ""
             }
+          },
+          "788e24bd-24ae-49d8-a2b0-bd49ae34476b": {
+            "type": "announcement",
+            "disabled": true,
+            "settings": {
+              "text": "Gratis verzending vanaf €150,-",
+              "text_alignment": "center",
+              "color_scheme": "background-1",
+              "link": ""
+            }
           }
         },
         "block_order": [
-          "announcement-bar-0"
+          "announcement-bar-0",
+          "788e24bd-24ae-49d8-a2b0-bd49ae34476b"
         ],
         "settings": {
         }
@@ -194,7 +205,7 @@
           "footer-2"
         ],
         "settings": {
-          "color_scheme": "background-1",
+          "color_scheme": "inverse",
           "newsletter_enable": true,
           "newsletter_heading": "Direct 10% korting ontvangen? Schrijf u dan nu in voor onze nieuwsbrief!",
           "show_social": true,
