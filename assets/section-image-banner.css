@@ -25,6 +25,18 @@
 
   .banner--content-align-left .banner__box {
     text-align: left;
+    max-width: 50%;
+    height: 100%;
+  }
+
+  .banner--content-align-left .banner__box:before {
+    content: "";
+    background-color: inherit;
+    position: absolute;
+    left: -100%;
+    top: 0;
+    height: 100%;
+    width: 100%;
   }
 
   .banner--content-align-left.banner--desktop-transparent .banner__box,
@@ -236,20 +248,14 @@
 .banner__content {
   padding: 0;
   display: flex;
-  flex-direction: column;
   position: relative;
   width: 100%;
   align-items: center;
   justify-content: center;
   z-index: 2;
-  gap: 1rem;
 }
 
 @media screen and (min-width: 750px) {
-  .banner__content {
-    padding: 5rem;
-    flex-direction: row;
-  }
 
   .banner__content--top-left {
     align-items: flex-start;
@@ -308,7 +314,7 @@
 }
 
 .banner__box {
-  padding: 4rem 3.5rem;
+  padding: 10rem 3.5rem;
   position: relative;
   height: fit-content;
   align-items: center;
@@ -398,6 +404,13 @@
   }
 }
 
+.banner__heading,
+.banner__text, 
+.banner__buttons {
+  position: relative;
+  z-index: 1;
+}
+
 .banner__heading {
   margin-bottom: 0;
 }
@@ -438,24 +451,4 @@
 
 .banner__box > * + .banner__buttons {
   margin-top: 2rem;
-}
-
-.banner__collection {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-}
-
-@media screen and (max-width: 480px) {
-
-.banner__collection a {
-  width: 50%;
-  padding: 0.2rem;
-}
-
-.banner__collection a img {
-  width: 100%;
-  height: 100%;
-}
-
 }

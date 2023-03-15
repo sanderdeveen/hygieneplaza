@@ -173,6 +173,7 @@
     },
     "0b90f594-51a3-46dc-8af7-1971376fa4aa": {
       "type": "section-icons",
+      "disabled": true,
       "blocks": {
         "b4f8997c-f064-4e0a-91db-ee5385e5507d": {
           "type": "logo",

@@ -447,13 +447,13 @@ h5,
 
 h1,
 .h1 {
-  font-size: calc(var(--font-heading-scale) * 3rem);
+  font-size: calc(var(--font-heading-scale) * 2rem);
 }
 
 @media only screen and (min-width: 750px) {
   h1,
   .h1 {
-    font-size: calc(var(--font-heading-scale) * 4rem);
+    font-size: calc(var(--font-heading-scale) * 3rem);
   }
 }
 
@@ -2200,6 +2200,17 @@ input[type='checkbox'] {
   color: rgb(var(--color-foreground));
 }
 
+.announcement-bar .page-width {
+  position: relative;
+}
+
+.announcement-bar img {
+  position: absolute;
+  right: 0;
+  height: 3.6rem;
+  width: auto;
+}
+
 .announcement-bar__link {
   display: block;
   width: 100%;
@@ -2228,6 +2239,16 @@ input[type='checkbox'] {
   padding: 1rem 0;
   margin: 0;
   letter-spacing: 0.1rem;
+  padding-right: 8rem;
+  line-height: 100%;
+  text-align: left;
+}
+
+@media screen and (min-width: 750px) {
+  .announcement-bar__message {
+    text-align: center;
+    padding-right: 1rem;
+  }
 }
 
 /* section-header */
