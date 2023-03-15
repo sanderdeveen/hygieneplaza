@@ -16,11 +16,12 @@
       "settings": {
         "show_collection_description": true,
         "show_collection_image": true,
-        "collection_image_position": true
+        "collection_image_position": false
       }
     },
     "82f111f3-e95f-4a3f-9935-aaaf39ac0e8b": {
       "type": "collection-blocks",
+      "disabled": true,
       "blocks": {
         "template--18018562867499__82f111f3-e95f-4a3f-9935-aaaf39ac0e8b-167647165756188885-0": {
           "type": "collection_block",
@@ -49,6 +50,7 @@
     },
     "108e190f-e676-420f-9ce8-217422f69667": {
       "type": "rich-text",
+      "disabled": true,
       "blocks": {
         "template--18018562867499__108e190f-e676-420f-9ce8-217422f69667-1676476369eef9a784-0": {
           "type": "heading",
